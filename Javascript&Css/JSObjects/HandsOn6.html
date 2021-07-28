@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body id="body">
+    <a id="red">Red</a>
+    <a id="white">White</a>
+    <a id="blue">Blue</a>
+    <a id="pink">Pink</a>
+</body>
+
+<script>
+    const body=document.getElementById("body");
+
+    document.getElementById("red").addEventListener("click",()=>{
+        body.style.backgroundColor="red"
+    });
+    document.getElementById("white").addEventListener("click",()=>{
+        body.style.backgroundColor="white"
+    });
+    document.getElementById("blue").addEventListener("click",()=>{
+        body.style.backgroundColor="blue"
+    });
+    document.getElementById("pink").addEventListener("click",()=>{
+        body.style.backgroundColor="pink"
+    });
+</script>
+</html>

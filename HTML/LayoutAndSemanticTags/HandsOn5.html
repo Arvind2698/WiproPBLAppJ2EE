@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    div{
+        height:100vh;
+    }
+    a{
+        display: inline-block;
+    }
+    .a{
+        background-color: antiquewhite;
+    }
+    .b{
+        background-color: aqua;
+        position: relative;
+    }
+    #bottom{
+        position: absolute;
+        left:0;
+        bottom:0;
+    }
+</style>
+<body>
+    <div class="a">
+        <a id="top" href="#bottom">Click to go down</a>
+    </div>
+    <div class="b">
+        <a id="bottom" href="#top">Click to go up</a>
+    </div>
+</body>
+
+</html>

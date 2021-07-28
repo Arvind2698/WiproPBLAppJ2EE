@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="username">
+        <input type="password" id="password">
+        <input type="submit" onclick="return formValidation()">
+    </form>
+</body>
+<script>
+    const formValidation=()=>{
+        const username=document.getElementById("username").value;
+        const password=document.getElementById("password").value;
+
+        if(username.match(/^[0-9]+$/)==null){
+            alert("Error with username");
+            document.getElementById("username").focus();
+            return false;
+        }
+        if(password.match(/^[a-zA-Z]{4,}$/)==null){
+            alert("Error with password");
+            document.getElementById("password").focus();
+            return false;
+        }
+
+        return true;
+    }
+</script>
+</html>

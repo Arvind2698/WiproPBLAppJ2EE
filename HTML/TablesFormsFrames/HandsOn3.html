@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+    td{
+        padding:10px
+    }
+    table{
+        width: 100%;
+    }
+
+    .btn{
+        padding: 5px;
+        margin: 5px;
+    }
+    .input{
+        width: 100%;
+    }
+
+</style>
+<body>
+    <div class="container">
+
+        <h1>Online Registration Formn</h1>
+
+        <hr>
+
+        <form action="" method="GET">
+            <table>
+                <tr>
+                    <td>Email: </td>
+                    <td> <input class="input" type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td> <input class="input" type="password" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Confirm password: </td>
+                    <td> <input class="input" type="password" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Gender: </td>
+                    <td>
+                        <input type="radio" name="Gender" value="male">Male
+                        <input type="radio" name="Gender" value="female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Profession: </td>
+                    <td>
+                        <select class="input" name="Occupation" >
+                            <option value="">Please select an option</option>
+                            <option  value="Mechanic">Mechanic</option>
+                            <option value="Programmer">Programmer</option>
+                            <option value="Pilot">Pilot</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input class="btn" type="reset" value="Reset">
+                        <input class="btn" type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

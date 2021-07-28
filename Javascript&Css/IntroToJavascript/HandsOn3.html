@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    const palindromeCheck=(str)=>{
+        let i=0;
+        let j=str.length-1;
+        while(i<=j){
+            if(str.charAt(i)!=str.charAt(j)){
+                return false;
+            }
+            i++;
+            j--;
+        }
+        return true;
+    }
+    console.log(palindromeCheck("malayalam"));
+</script>
+</html>

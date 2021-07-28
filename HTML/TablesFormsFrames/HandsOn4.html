@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .top-container{
+        width: 100%;
+        height:30vh;
+        background-image: url("https://i.pinimg.com/originals/9e/8d/74/9e8d747819250be17bff875604223894.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bottom-container{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+    }
+    .bottom-left{
+        height: 100%;
+        width: 30%;
+        display: inline-block;
+    }
+    .bottom-right{
+        height: 100%;
+        width: 70%;
+        display: inline-block;
+    }
+    a{
+        color: #fff;
+        padding: 15px;
+        margin:10px;
+        display: inline-block;
+        background-color: #333;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .container-content{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div>
+        <div class="top-container">
+
+        </div>
+        <div class="bottom-container">
+            <div class="bottom-left">
+                <div class="container-content">
+                    <a id="font">Font</a>
+                    <a id="align">Alignment</a>
+                </div>
+            </div>
+            <div id="target" class="bottom-right">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        const btn_font=document.getElementById("font");
+        const btn_align=document.getElementById("align");
+        const container=document.getElementById("target");
+        btn_font.addEventListener("click",()=>{
+            container.innerHTML="<iframe src='./HandsOn4pt1.html' width='100%' height='100%'></iframe>";
+        });
+        btn_align.addEventListener("click",()=>{
+            container.innerHTML="<iframe src='./HandsOn4pt2.html' width='100%' height='100%'></iframe>";
+        });
+    </script>
+</body>
+</html>

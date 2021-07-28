@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="password">
+        <input type="submit" onclick="return formValidation()">
+    </form>
+</body>
+<script>
+    const formValidation=()=>{
+        const phone=document.getElementById("password").value;
+
+        if(phone.length>=6 && phone.length<=20){
+            if(phone.match(/[a-z]{1}/)){
+                if(phone.match(/[A-Z]{1}/)){
+                    if(phone.match(/[0-9]{1}/)){
+                        return true;
+                    }
+                }
+            }
+        }
+
+        alert("Error with password");
+        return false;
+    }
+</script>
+</html>
