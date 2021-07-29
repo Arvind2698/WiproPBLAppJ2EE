@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+</head>
+<style>
+
+	.container{
+		max-width: 500px;
+		margin:auto;
+		text-align :center;
+	}
+	
+	
+	h1{
+		margin:60px 0 0 20px;
+	}
+	
+	div>input{
+		display:block;
+		height:30px;
+		width:60%;
+		margin:20px auto;
+		padding:10px 20px;
+		border-radius: 7px;
+		border:1px solid #333;
+	}
+	
+	div>input:focus{
+		outline-style: none;
+	}
+	
+	
+</style>
+<body>
+	<div class="container">
+		<h1>Enter your details</h1>
+		<hr>
+		<form method="post" action="createUser">
+			<div>
+				<input type="text" name="username" placeholder="Enter you username">
+				<input type="password" name="password" placeholder="Enter your password">
+			</div>
+			<input type="submit" value="Submit" >
+		</form>
+	</div>
+</body>
+</html>

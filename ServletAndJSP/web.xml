@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ReadWrite</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+  	<param-name>name</param-name>
+  	<param-value>Arvind</param-value>
+  </context-param>
+  
+  <servlet>
+  	<servlet-name>HelloServlet</servlet-name>
+  	<servlet-class>com.arvind.wipro.IntroductionToServlet.HandsOn1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HelloServlet</servlet-name>
+  	<url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>RequestResponse1</servlet-name>
+  	<servlet-class>com.arvind.wipro.GetAndPostRequest.HandsOn1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RequestResponse1</servlet-name>
+  	<url-pattern>/requestresponse1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>RequestResponse2</servlet-name>
+  	<servlet-class>com.arvind.wipro.GetAndPostRequest.HandsOn2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RequestResponse2</servlet-name>
+  	<url-pattern>/requestresponse2</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>ContextConfig</servlet-name>
+  	<servlet-class>com.arvind.wipro.ConfigContext.HandsOn1</servlet-class>
+  	<init-param>
+  		<param-name>name</param-name>
+  		<param-value>new servlet</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ContextConfig</servlet-name>
+  	<url-pattern>/contextconfig</url-pattern>
+  </servlet-mapping>
+  
+ 
+ 
+  
+  <servlet>
+  	<servlet-name>session1</servlet-name>
+  	<servlet-class>com.arvind.wipro.Session.HandsOn1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>session1</servlet-name>
+  	<url-pattern>/session1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>session2</servlet-name>
+  	<servlet-class>com.arvind.wipro.Session.HandsOn2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>session2</servlet-name>
+  	<url-pattern>/session2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>session3</servlet-name>
+  	<servlet-class>com.arvind.wipro.Session.HandsOn3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>session3</servlet-name>
+  	<url-pattern>/session3</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <servlet>
+  	<servlet-name>jsphandson1</servlet-name>
+  	<servlet-class>com.arvind.wipro.JSP.HandsOn1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>jsphandson1</servlet-name>
+  	<url-pattern>/jsphandson1</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
