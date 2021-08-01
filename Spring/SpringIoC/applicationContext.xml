@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="movie" class="com.arvind.wipro.bean.Movie">
+		<constructor-arg name="movieId" value="M001"></constructor-arg>
+		<constructor-arg name="movieName" value="The film"></constructor-arg>
+		<constructor-arg name="movieActor" value="Tom Cruise"></constructor-arg>
+	</bean>
+
+	<bean id="defaultmessage" class="com.arvind.wipro.bean.DefaultMessage">
+		<constructor-arg name="message" value="Hello world"></constructor-arg>
+	</bean>
+<!--  
+	<bean id="defaultmessage" class="com.arvind.wipro.bean.DefaultMessage">
+		<property name="message" value="Hello world"></property>
+	</bean>
+-->
+	
+	<bean id="rectangle" class="com.arvind.wipro.bean.Rectangle"></bean>
+	<bean id="triangle" class="com.arvind.wipro.bean.Triangle"></bean>
+	<bean id="parallelogram" class="com.arvind.wipro.bean.Parallelogram"></bean>
+	
+	
+	<bean id="java" class="com.arvind.wipro.bean.Test">
+		<constructor-arg name="testId" value="T001"></constructor-arg>
+		<constructor-arg name="testTitle" value="Core java test"></constructor-arg>
+		<constructor-arg name="testMarks" value="80" ></constructor-arg>
+	</bean>
+	<bean id="oracle" class="com.arvind.wipro.bean.Test">
+		<constructor-arg name="testId" value="T002"></constructor-arg>
+		<constructor-arg name="testTitle" value="Oracle test"></constructor-arg>
+		<constructor-arg name="testMarks" value="85" type="int"></constructor-arg>
+	</bean>
+	<bean id="student1" class="com.arvind.wipro.bean.Student">
+		<constructor-arg name="studentId" value="S001"></constructor-arg>
+		<constructor-arg name="studentName" value="Steve"></constructor-arg>
+		<constructor-arg name="studentTest" ref="java"></constructor-arg>
+	</bean>
+	<bean id="student2" class="com.arvind.wipro.bean.Student">
+		<constructor-arg name="studentId" value="S002"></constructor-arg>
+		<constructor-arg name="studentName" value="Arvind"></constructor-arg>
+		<constructor-arg name="studentTest" ref="oracle"></constructor-arg>
+	</bean>
+	
+	<bean id="india" class="com.arvind.wipro.bean.Country">
+		<constructor-arg name="countryId" value="India"></constructor-arg>
+		<constructor-arg name="countryName" value="India"></constructor-arg>
+	</bean>
+	<bean id="usa" class="com.arvind.wipro.bean.Country">
+		<constructor-arg name="countryId" value="usa"></constructor-arg>
+		<constructor-arg name="countryName" value="usa"></constructor-arg>
+	</bean>
+	
+	<bean id="player1" class="com.arvind.wipro.bean.Player">
+		<constructor-arg name="playerId" value="PL1"></constructor-arg>
+		<constructor-arg name="playerName" value="player1"></constructor-arg>
+		<constructor-arg name="country" ref="india"></constructor-arg>
+	</bean>
+	<bean id="player2" class="com.arvind.wipro.bean.Player">
+		<constructor-arg name="playerId" value="PL2"></constructor-arg>
+		<constructor-arg name="playerName" value="player2"></constructor-arg>
+		<constructor-arg name="country" ref="india"></constructor-arg>
+	</bean>
+	<bean id="player3" class="com.arvind.wipro.bean.Player">
+		<constructor-arg name="playerId" value="PL3"></constructor-arg>
+		<constructor-arg name="playerName" value="player3"></constructor-arg>
+		<constructor-arg name="country" ref="india"></constructor-arg>
+	</bean>
+	<bean id="player4" class="com.arvind.wipro.bean.Player">
+		<constructor-arg name="playerId" value="PL4"></constructor-arg>
+		<constructor-arg name="playerName" value="player4"></constructor-arg>
+		<constructor-arg name="country" ref="usa"></constructor-arg>
+	</bean>
+	<bean id="player5" class="com.arvind.wipro.bean.Player">
+		<constructor-arg name="playerId" value="PL5"></constructor-arg>
+		<constructor-arg name="playerName" value="player5"></constructor-arg>
+		<constructor-arg name="country" ref="usa"></constructor-arg>
+	</bean>
+
+</beans>
